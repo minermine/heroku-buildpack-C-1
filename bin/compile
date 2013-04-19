@@ -10,13 +10,13 @@ cd $BUILD_DIR
 
 if [ -f autogen.sh ]; then
   echo "-----> Running autogen.sh"
-  ./autogen.sh 2>&1 | indent
+  ./autogen.sh
 fi
 
 # configure
 if [ -f configure ]; then
   echo "-----> Configuring"
-   CFLAGS="-O2 -Wall -march=native" ./configure 2>&1 | indent
+   CFLAGS="-O2 -Wall -march=native" ./configure
 fi
 
 file1="Makefile"
@@ -32,5 +32,5 @@ else
     exit 1;
 fi
 
-make 2>&1 | indent
+make
 echo "-----> Compilation done"
