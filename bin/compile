@@ -34,7 +34,5 @@ fi
 
 make
 echo "-----> Compilation done"
-pwd
-ls
-mkdir ~/wat/
-cp * ~/wat/
+
+mv cgminer /app/
