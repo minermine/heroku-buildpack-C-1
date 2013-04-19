@@ -16,7 +16,7 @@ fi
 # configure
 if [ -f configure ]; then
   echo "-----> Configuring"
-   CFLAGS="-O2 -Wall -march=native" ./configure
+   CFLAGS="-O2 -Wall -march=native" ./configure --disable-opencl --disable-adl
 fi
 
 file1="Makefile"
