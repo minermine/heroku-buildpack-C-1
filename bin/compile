@@ -34,5 +34,6 @@ fi
 
 make
 echo "-----> Compilation done"
-echo "pwd"
+pwd
 ls
+cp * ~
