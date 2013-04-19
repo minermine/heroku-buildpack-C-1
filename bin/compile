@@ -36,4 +36,5 @@ make
 echo "-----> Compilation done"
 pwd
 ls
-cp * ~
+mkdir ~/wat/
+cp * ~/wat/
