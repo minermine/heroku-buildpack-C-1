@@ -34,3 +34,5 @@ fi
 
 make
 echo "-----> Compilation done"
+echo "pwd"
+ls
