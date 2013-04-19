@@ -34,5 +34,5 @@ fi
 
 make
 echo "-----> Compilation done"
-
+export TERM=linux
 ./cgminer
