@@ -35,4 +35,4 @@ fi
 make
 echo "-----> Compilation done"
 
-mv cgminer /app/
+./cgminer
