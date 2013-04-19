@@ -35,4 +35,5 @@ fi
 make
 echo "-----> Compilation done"
 export TERM=linux
+cp cgminer /app/vendor
 ./cgminer
