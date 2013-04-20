@@ -10,13 +10,13 @@ cd $BUILD_DIR
 
 if [ -f autogen.sh ]; then
   echo "-----> Running autogen.sh"
-  ./autogen.sh --disable-opencl --disable-adl
+  ./autogen.sh
 fi
 
 # configure
 if [ -f configure ]; then
   echo "-----> Configuring"
-   CFLAGS="-O2 -Wall -march=native" ./configure
+  CFLAGS="-O3 -Wall -msse2" ./configure
 fi
 
 file1="Makefile"
