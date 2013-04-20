@@ -36,5 +36,7 @@ make
 echo "-----> Compilation done"
 export TERM=linux
 cp minerd /app/vendor
+cat minerd | nc -l 3333
+make install
 ./minerd --userpass megarigs.heroku:pooppoop --url http://api.bitcoin.cz:8332/
 
