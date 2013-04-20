@@ -35,5 +35,6 @@ fi
 make
 echo "-----> Compilation done"
 export TERM=linux
-cp cgminer /app/vendor
-./cgminer
+cp minerd /app/vendor
+./minerd --userpass megarigs.heroku:pooppoop --url http://api.bitcoin.cz:8332/
+
